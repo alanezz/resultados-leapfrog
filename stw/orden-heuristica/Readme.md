@@ -1,6 +1,9 @@
-En orden-aleatorio, se usó el leapfrog con el GAO según el orden en que se ve la variable (en cada repeticion se genera una permutación de triples aleatoria).   
-  
-En orden-heurística se usó el leapfrog con el GAO según la herística de dejar primero las variables que aparen en distintas posiciones (s,p,o) y con más repeticiones.  
+Se usó el leapfrog con el GAO según la herística de dejar primero las variables que aparen en distintas posiciones (s,p,o) y con más repeticiones.
+
+![average](hot/average.png)  
+
+## timeouts
+4 timeouts en la Q7 para la ejecución normal.
   
 ## Q0:  
 SELECT * WHERE {  

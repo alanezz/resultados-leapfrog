@@ -1,29 +1,38 @@
+Se usó el leapfrog con el GAO según la herística de dejar primero las variables que aparen en distintas posiciones (s,p,o) y con más repeticiones.
+
+Solo se ejecutaron 10 repeticiones en lugar de las 20 repeticiones usuales porque no hay orden aleatorio de triples
+
+![average](hot/average.png)  
+
+## timeouts
+10 timeouts (siempre) en la Q4 para la ejecución normal.
+
 ## Q0     
 SELECT * WHERE {   
->   ?x <<http://example.org/p2>> ?x_0 .    
->   ?x <<http://example.org/p2>> ?x_1 .    
->   ?x <<http://example.org/p2>> ?x_2 .    
->   ?x <<http://example.org/p2>> ?x_3 .    
->   OPTIONAL {   
->   >   ?x_3 <<http://example.org/p2>> ?x_3_0 .    
->   >   ?x_3 <<http://example.org/p2>> ?x_3_1 .    
->   >   ?x_3 <<http://example.org/p3>> ?x_3_2 .    
->   }   
+    ?x <<http://example.org/p2>> ?x_0 .    
+    ?x <<http://example.org/p2>> ?x_1 .    
+    ?x <<http://example.org/p2>> ?x_2 .    
+    ?x <<http://example.org/p2>> ?x_3 .    
+    OPTIONAL {   
+        ?x_3 <<http://example.org/p2>> ?x_3_0 .    
+        ?x_3 <<http://example.org/p2>> ?x_3_1 .    
+        ?x_3 <<http://example.org/p3>> ?x_3_2 .    
+    }   
 }  
   
   
 ## Q1  
 SELECT * WHERE {   
->   ?x <<http://example.org/p2>> ?x_0 .    
->   ?x <<http://example.org/p1>> ?x_1 .    
->   ?x <<http://example.org/p2>> ?x_2 .    
->   ?x <<http://example.org/p1>> ?x_3 .    
->   OPTIONAL {   
->   >   ?x_3 <<http://example.org/p3>> ?x_3_d .   
->   >   ?x_3_d <<http://example.org/p3>> ?x_3_d_0 .   
->   >   ?x_3_d <<http://example.org/p3>> ?x_3_d_1 .   
->   >   ?x_3_d <<http://example.org/p2>> ?x_3_d_2 .   
->   }  
+    ?x <<http://example.org/p2>> ?x_0 .    
+    ?x <<http://example.org/p1>> ?x_1 .    
+    ?x <<http://example.org/p2>> ?x_2 .    
+    ?x <<http://example.org/p1>> ?x_3 .    
+    OPTIONAL {   
+        ?x_3 <<http://example.org/p3>> ?x_3_d .   
+        ?x_3_d <<http://example.org/p3>> ?x_3_d_0 .   
+        ?x_3_d <<http://example.org/p3>> ?x_3_d_1 .   
+        ?x_3_d <<http://example.org/p2>> ?x_3_d_2 .   
+    }  
 }  
   
   

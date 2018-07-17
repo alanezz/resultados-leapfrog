@@ -1,10 +1,9 @@
 Se usó el leapfrog con el GAO según el orden en que se ve la variable (en cada repeticion se genera una permutación de triples aleatoria).   
 
 ![average](hot/average.png)  
-![minimum](hot/min.png) 
 
 ## timeouts
-4 timeouts en la Q7 para la ejecución normal.
+7 timeouts en la Q7 para la ejecución normal.
   
 ## Q0:  
 SELECT * WHERE {  

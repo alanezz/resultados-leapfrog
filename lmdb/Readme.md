@@ -1,0 +1,1 @@
+Para el caso de lmdb hay 2 set de consultas que se ejecutaron, uno similar al de stw pero con las propiedades correspondientes cambiadas y otro sin ninguna propiedad fija.
